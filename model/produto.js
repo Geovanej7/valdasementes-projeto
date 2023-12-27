@@ -23,3 +23,4 @@ type: Sequelize.DOUBLE
 })
 
 module.exports = Produto 
+

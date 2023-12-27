@@ -1,11 +1,26 @@
-<%- include('header') %>
-<%- include('styleCorpo') %>
+<%- include('header') %> <%- include('styleCorpo') %> <%- include('botoesHome') %>
+
 <body>
-    
-    <div id="home">
-    <a href="/insereProdutos"><button>Ir para a Página de Cadastro</button></a>
-    <br>
-    <a href="/buscaProduto"><button>Ir para a Página de Busca</button></a>
-    </div>
-    
+  <div id="home">
+    <a href="/insereProdutos"><button>inserir produtos</button></a>
+    <br />
+    <a href="/buscaProduto"><button>Busca de produtos</button></a>
+    <br />
+    <a href="/buscaUser"><button>Busca de usuários</button></a>
+    <br />
+    <a href="/cadastroUser"><button>Cadastre-se</button></a>
+    <br />
+    <a href="/loginUser"><button>login</button></a>
+  </div>
+
+  <div id="mensagem">
+    <h1>Bem vindo <%= nomeUsuario ? ', ' + nomeUsuario : '' %></h1>
+    <p>conheça nossa variedade de sementes clicando no botão abaixo</p>
+  </div>
+
+  <div id="botaoProdutos">
+    <a href="/todosProdutos"><button id="produtos">nossos produtos</button></a>
+  </div>
 </body>
+
+<%- include('footer') %>

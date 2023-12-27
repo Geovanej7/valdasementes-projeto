@@ -1,0 +1,16 @@
+<%- include('styleCorpo') %>
+
+<body>
+  <div>
+    <h2>Cadastre-se</h2>
+    <form action="/addUsuario" method="post">
+      login: <input type="text" name="login" id="login" />
+      <br />
+      nome: <input type="text" name="nome" id="nome" />
+      <br />
+      senha: <input type="password" name="senha" id="senha" />
+      <br />
+      <input type="submit" value="Cadastrar" />
+    </form>
+  </div>
+</body>
